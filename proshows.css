@@ -1,0 +1,20 @@
+#headding{
+    color: #787f84;
+    font-size: 600%;
+    font-family: KyivType-Heavy-Sans;
+    text-align: center;
+}
+
+#italic{
+    /*font-style: italic;*/
+    color: black; 
+    -webkit-text-stroke: 1px #787f84;
+}
+
+@font-face { font-family:NeueMontreal-Bold; src: url('NeueMontreal-Bold.otf'); }
+@font-face { font-family:NeueMontreal-Regular; src: url('NeueMontreal-Regular.otf'); }
+@font-face { font-family:NeueMontreal-Medium; src: url('NeueMontreal-Medium.otf'); }
+@font-face { font-family:NeueMontreal-BoldItalic; src: url('NeueMontreal-BoldItalic.otf'); }
+@font-face { font-family:KyivType-Heavy-Sans; src: url('KyivType-Heavy-Sans.ttf'); }
+@font-face { font-family:KyivType-Sans-Bold; src: url('KyivType-Sans-Bold.ttf'); }
+@font-face { font-family:KyivType-Sans; src: url('KyivType-Sans.ttf'); }

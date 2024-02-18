@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        .left-div {
+            display: inline;    
+            margin-right: auto; 
+            margin-left: 40px;     
+        }
+        .center-div {
+            display: inline;
+        }
+        .right-div {
+            display: inline;
+            margin-left: auto; 
+            margin-right: 20px;
+        }
+        .dt{
+            color: #f4f4f4;
+            text-align: center;
+        }
+        .contact{
+            display: inline-block;
+        }
+        .about{
+            color:white;
+            font-family: NeueMontreal-Regular;
+        }
+        .address{
+            display: inline-block;
+        }
+        .vertical-line {
+            border-left: 1px solid #fff; 
+            height: 10px; 
+        }
+        .box1{
+            display: inline-flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        #scroll{
+            margin: 0px 650px 0px 650px;
+            background-color: rgb(34, 33, 35);
+            color: white;
+            border-radius: 10px;
+            font-family: NeueMontreal-Regular;
+        }
+        #header{
+            /*margin: 100px 0px 100px 0px;*/
+            font-family: NeueMontreal-Bold;
+            font-size: 20px;
+        }
+        #register{
+            /*margin: 100px 0px 100px 0px;*/
+            font-family: NeueMontreal-Bold;
+            font-size: 24px;
+        }
+        #header_components{
+            margin: 250px 50px 50px 50px;
+            color: #787f84;
+            text-decoration:none;
+        }
+        #register_component{
+            color: white;
+            text-decoration:none;
+            font-family: NeueMontreal-Bold;
+            font-size: 24px;
+            text-align: center;
+        }
+        #logo{
+            font-family: NeueMontreal-Bold;
+            font-size: 150px;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            -webkit-text-stroke-width: 6px;
+            -webkit-text-stroke-color: white;
+        }
+        #logoimg{
+            display: flex;
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        #month{
+            font-family: KyivType-Heavy-Sans;
+            /*display: flex;*/
+            font-size: 60px;
+            color: white;
+            /*justify-content: center;*/
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        #dates{
+            font-family: KyivType-Sans-Bold;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            color: black; /* Set the text color to white */
+            -webkit-text-stroke: 2px white;
+        }
+        #footer_t1{
+            color:#787F84;
+            font-family: NeueMontreal-Medium;
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom: 3px;
+            margin-left: 17px;
+        }
+        #footer_t2{
+            color: white;
+            font-family: NeueMontreal-BoldItalic;
+            font-size: 25px;
+            margin-top: 3px;
+            margin-left: 17px;
+            margin-bottom: 1px;
+        }
+        #footer_t3{
+            color: white;
+            font-family: NeueMontreal-Bold;
+            font-size: 20px;
+            margin-top: 3px;
+            margin-left: 17px;
+            margin-bottom: 20px;
+        }
+        #add_1{
+            color:#787F84;
+            font-family: NeueMontreal-Medium;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+        #add_2{
+            color: white;
+            font-family: NeueMontreal-BoldItalic;
+            font-size: 25px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        #box_1{
+            font-family: NeueMontreal-Regular;
+            font-size: 16px;
+            color: #787f84;
+            text-decoration:none;
+            margin-bottom: 8px;
+        }
+        @font-face { font-family:NeueMontreal-Bold; src: url('NeueMontreal-Bold.otf'); }
+        @font-face { font-family:NeueMontreal-Light; src: url('NeueMontreal-Light.otf'); }
+        @font-face { font-family:NeueMontreal-Regular; src: url('NeueMontreal-Regular.otf'); }
+        @font-face { font-family:NeueMontreal-Medium; src: url('NeueMontreal-Medium.otf'); }
+        @font-face { font-family:NeueMontreal-BoldItalic; src: url('NeueMontreal-BoldItalic.otf'); }
+        @font-face { font-family:KyivType-Heavy-Sans; src: url('KyivType-Heavy-Sans.ttf'); }
+        @font-face { font-family:KyivType-Sans-Bold; src: url('KyivType-Sans-Bold.ttf'); }
+        @font-face { font-family:KyivType-Sans; src: url('KyivType-Sans.ttf'); }
+    </style>
+</head>
+
+
+<body style="background-color:black">
+
+    <nav class="container" >
+        <div class="left-div">
+            <a href="./index.html"><img src="./Infinitus Logo.png" width=123px></a>
+        </div>
+        <div class="center-div"  id="header" > 
+            <a class="navhover" id= "header_components" href="./events.html" >Events</a>
+            <a class="navhover" id= "header_components" href="./proshows.html" >Proshows</a>
+            <a class="navhover" id= "header_components" href="./sponsors.html" >Sponsors</a>
+            <a class="navhover" id= "header_components" href="./team.html" >Team</a>
+        </div>
+        <div class="right-div">
+            <a id= "register_component" href="#" >Register</a>
+        </div>
+    </nav>
+    
+
+    <div>
+        <!--
+        <h1 id="logo">
+            INFINITUS'24
+        </h1>    
+        -->
+        <img src="./Infinitus_2024_Logo_White.png" alt="Infinitus Logo" width="60%" id="logoimg">
+    </div>
+    <!-- <div style="display:block; text-align: center;">
+        <h1 id="month">FEB</h1>
+        <h6 id="dates">22  23  24</h6>
+    </div> -->
+
+    <div class="dt">
+        <h1 style="font-size: 50px; font-family: NeueMontreal-Light; margin-bottom:0;">21, 22, 23, 24</h1>
+        <h1 style="font-size: 50px; font-family: NeueMontreal-Regular; margin-top:0; letter-spacing:2px">March 2023</h1>
+    </div>
+
+    <div id="scroll">
+        <marquee>Registration end on 22 feb 2024</marquee>
+    </div>
+    <br>
+    <div style="display:block; text-align: center;">
+        <a id= "register_component" href="#" >Register</a>
+    </div>
+        
+
+    <div class="about">
+        <h1>A<span style="font-style:italic;"> National </span> Level Festival hosted</h1>
+        <h1>by SRM University - <span style="font-style:italic;">AP</span>.</h1>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="vertical-line"></div>
+    <hr>
+    <footer class="footer">
+        <div class="contact">
+            <h1 id="footer_t1">Get in touch</h1>
+            <h1 id="footer_t2">infinitus@srmap.edu.in</h1>
+            <h1 id="footer_t3">+91 98870 30111</h1>
+        </div>
+
+        <div class="box1">
+            <a id="box_1" href="#" >Home</a>
+            <a id="box_1" href="./team.html" >Team</a>
+            <a id="box_1" href="./register.html" >Registration</a>   
+        </div>
+
+        <div class="box1">
+            <a id="box_1" href="./events.html" >Events</a>
+            <a id="box_1" href="./proshows.html" >Proshows</a>
+            <a id="box_1" href="./sponsors.html" >Sponsors</a>   
+        </div>
+
+        <div class="address">
+            <h1 id="add_1">Address</Address></h1>
+            <h3 id="add_2">SRM University, Mangalagiri -Mandal, </h3>
+            <h3 id="add_2">Neeru Konda, Andhra Pradesh 522502.</h3>
+        </div>
+    </footer>
+</body>
+</html>

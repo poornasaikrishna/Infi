@@ -81,3 +81,40 @@
 @font-face { font-family:NeueMontreal-BoldItalic; src: url('NeueMontreal-BoldItalic.otf'); }
 @font-face { font-family:KyivType-Heavy-Sans; src: url('KyivType-Heavy-Sans.ttf'); }
 @font-face { font-family:KyivType-Sans-Bold; src: url('KyivType-Sans-Bold.ttf'); }
+
+/*nav bar*/
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-div {
+  display: inline;    
+  margin-right: auto; 
+  margin-left: 40px;     
+}
+.center-div {
+  display: inline;
+}
+.right-div {
+  display: inline;
+  margin-left: auto; 
+  margin-right: 20px;
+}
+#header{
+  font-family: NeueMontreal-Bold;
+  font-size: 20px;
+}
+#header_components{
+  margin: 250px 50px 50px 50px;
+  color: #787f84;
+  text-decoration:none;
+}
+#register_component{
+  color: white;
+  text-decoration:none;
+  font-family: NeueMontreal-Bold;
+  font-size: 24px;
+  text-align: center;
+}
